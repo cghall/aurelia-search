@@ -1,0 +1,19 @@
+<template>
+  <section>
+    <h3>European Championship 2016 - Teams</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Group</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr repeat.for="result of results">
+          <td>${result.country}</td>
+          <td>${result.group}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</template>

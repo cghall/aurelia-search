@@ -1,0 +1,15 @@
+<template>
+  <section class="au-animate">
+    <img src="images/main-logo.svg" class="pull-right">
+    <h2>${heading}</h2>
+    <form role="form">
+      <div class="form-group">
+        <input type="text" value.bind="filterText" class="form-control" id="fn" placeholder="search...">
+      </div>
+      <div class="form-group">
+        <label>Search Filter Value</label>
+        <p class="help-block">${filterText | upper}</p>
+      </div>
+    </form>
+  </section>
+</template>
