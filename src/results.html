@@ -9,12 +9,30 @@
         </tr>
       </thead>
       <tbody>
-        <tr repeat.for="result of results">
+        <tr repeat.for="result of fullResults">
           <td>${result.country}</td>
           <td>${result.group}</td>
         </tr>
       </tbody>
     </table>
-    <p>${filterText}</p>
+  </section>
+  <section>
+  	<div if.bind="hasFilter">
+    <h3>European Championship 2016 - Filtered Teams</h3>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Group</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr repeat.for="result of filteredResults">
+          <td>${result.country}</td>
+          <td>${result.group}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
   </section>
 </template>
