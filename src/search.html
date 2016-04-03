@@ -2,7 +2,6 @@
   <require from="./search-bar"></require>
   <require from="./results"></require>
 
-  <search-bar></search-bar>
-  <results></results>
-
+  <search-bar filter-text.two-way="filterText"></search-bar>
+  <results filter-text.bind="filterText"></results>
 </template>

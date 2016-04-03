@@ -1,6 +1,9 @@
+import { bindable} from 'aurelia-framework';
+
+
 export class SearchBar {
   heading = 'Welcome to the Aurelia Search App';
-  filterText = '';
+  @bindable() filterText = '';
 }
 
 export class UpperValueConverter {
