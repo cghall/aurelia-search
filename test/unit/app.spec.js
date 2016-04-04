@@ -29,7 +29,7 @@ describe('the App module', () => {
     expect(sut.router.title).toEqual('Aurelia Search');
   });
 
-  it('should have a welcome route', () => {
+  it('should have a search route', () => {
     expect(sut.router.routes).toContain({ route: ['', 'search'], name: 'search',  moduleId: 'search', nav: true, title: 'Search' });
   });
 
