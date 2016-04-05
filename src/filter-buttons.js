@@ -1,13 +1,10 @@
 export class FilterButtons{
 	
 	constructor(){
-		this.labels = [{name: 'First', selected: true},
-		               {name: 'Second', selected: false},
-		               {name: 'Third', selected: false},
-		               {name: 'Fourth', selected: false}];
-	}
-
-	onClick(){
-		console.log('Button clicked');
+		this.labels = [{name: 'All', selected: true},
+					   {name: 'GK', selected: false},
+		               {name: 'DF', selected: false},
+		               {name: 'MF', selected: false},
+		               {name: 'ST', selected: false}];
 	}
 }
