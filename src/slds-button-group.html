@@ -1,0 +1,4 @@
+<template>
+  <div class="slds-m-around--large">
+    <button repeat.for="label of labels" class="slds-button ${label.selected === true ? 'slds-button--brand' : 'slds-button--neutral'}">${label.name} ${$index}</button>
+</template>
